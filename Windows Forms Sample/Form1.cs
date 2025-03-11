@@ -50,11 +50,13 @@ namespace Windows_Forms_Sample
                     // Display appropriate error messages
                     if (string.IsNullOrEmpty(UsernameTxtbox.Text))
                     {
+                        MessageBox.Show("Username is required.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         errorProvider.SetError(UsernameTxtbox, "Username is required!");
                         UsernameTxtbox.Focus();
                     }
                     else if (string.IsNullOrEmpty(PasswordTxtBox.Text))
                     {
+                        MessageBox.Show("Password is required.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         errorProvider.SetError(PasswordTxtBox, "Password is required");
                         PasswordTxtBox.Focus();
                     }

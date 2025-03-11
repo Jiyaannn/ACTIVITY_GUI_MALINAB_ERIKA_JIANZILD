@@ -54,13 +54,14 @@ namespace Windows_Forms_Sample
 
         private void Cancelbtn(object sender, EventArgs e)
         {
-            Form form3 = new Student_Page();
+                Form form3 = new Student_Page();
             form3.Show();
             Visible = false;
         }
 
         private void Savebtn(object sender, EventArgs e)
         {
+            MessageBox.Show("Profile updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Form form3 = new Student_Page();
             form3.Show();
             Visible = false;
